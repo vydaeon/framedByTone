@@ -19,6 +19,12 @@ body {
   display: flex;
 }
 
+.menu-list {
+  padding-left: 20px;
+  list-style: none;
+  margin: 0;
+}
+
 .bg-dark-clear {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -33,4 +39,8 @@ body {
 
 .display-subtitle {
   font-size: calc(1rem + 1vw);
+}
+
+p {
+  margin-bottom: 0.5rem;
 }
