@@ -18,17 +18,24 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav px-2 d-inline-flex bg-dark rounded ml-auto">
-          <a class="nav-item nav-link" href="#top" onclick="$('#navbar').collapse('hide')">Top</a>
-          <a class="nav-item nav-link" href="#mission" onclick="$('#navbar').collapse('hide')">Mission</a>
-          <a class="nav-item nav-link" href="#whoWeAre" onclick="$('#navbar').collapse('hide')">Who We Are</a>
-          <a class="nav-item nav-link" href="#frames" onclick="$('#navbar').collapse('hide')">Our Frames</a>
+          <a class="nav-item nav-link" href="#top" onclick="app.closeMenu()">Top</a>
+          <a class="nav-item nav-link" href="#mission" onclick="app.closeMenu()">Mission</a>
+          <a class="nav-item nav-link" href="#whoWeAre" onclick="app.closeMenu()">Who We Are</a>
+          <a class="nav-item nav-link" href="#frames" onclick="app.closeMenu()">Our Frames</a>
           <ul class="menu-list">
-            <li><a class="nav-item nav-link" href="#zenBarcelona" onclick="$('#navbar').collapse('hide')">Zen Barcelona</a></li>
-            <li><a class="nav-item nav-link" href="#ovvoOptics" onclick="$('#navbar').collapse('hide')">OVVO Optics</a></li>
-            <li><a class="nav-item nav-link" href="#carolineAbramParis" onclick="$('#navbar').collapse('hide')">Caroline Abram Paris</a></li>
+            <li><a class="nav-item nav-link" href="#zenBarcelona" onclick="app.closeMenu()">Zen Barcelona</a></li>
+            <li><a class="nav-item nav-link" href="#ovvoOptics" onclick="app.closeMenu()">OVVO Optics</a></li>
+            <li><a class="nav-item nav-link" href="#carolineAbramParis" onclick="app.closeMenu()">Caroline Abram Paris</a></li>
+            <li><a class="nav-item nav-link" href="#liebeskind" onclick="app.closeMenu()">Liebeskind Berlin</a></li>
+            <li><a class="nav-item nav-link" href="#dilliDalli" onclick="app.closeMenu()">Dilli Dalli Collection</a></li>
           </ul>
-          <a class="nav-item nav-link" href="#services" onclick="$('#navbar').collapse('hide')">Our Services</a>
-          <a class="nav-item nav-link" href="#faqs" onclick="$('#navbar').collapse('hide')">FAQs</a>
+          <a class="nav-item nav-link" href="#services" onclick="app.closeMenu()">Our Services</a>
+          <a class="nav-item nav-link" href="#faqs" onclick="app.closeMenu()">FAQs</a>
+          <ul class="menu-list">
+            <li><a class="nav-item nav-link" href="#prescription" onclick="app.closeMenu()">Prescription</a></li>
+            <li><a class="nav-item nav-link" href="#payment" onclick="app.closeMenu()">Payment</a></li>
+            <li><a class="nav-item nav-link" href="#processingShipping" onclick="app.closeMenu()">Processing/Shipping</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -39,8 +46,8 @@
       <h1 class="display-title title-text text-nowrap text-center">framed by tone</h1>
       <h1 class="display-subtitle title-text mt-3 text-nowrap text-center"><em>your redefined eyewear concierge</em></h1>
       <div class="row my-5 justify-content-center">
-        <div class="col-4 col-sm-3 col-lg-2 text-center">
-          <img src="fleur-de-lis-white.png" class="img-fluid mx-auto d-block">
+        <div class="col-4 col-sm-3 col-lg-2">
+          <img src="fleur-de-lis-white.png" class="img-fluid">
         </div>
       </div>
       <div class="row">
@@ -177,6 +184,57 @@
           The line was rewarded its first year for the Silmo award for best kids design.
         </p>
       </div>
+      <div class="row mt-3" id="liebeskind">
+        <div class="col-12 col-lg-8">
+          <img src="liebeskind-logo.jpg" class="img-fluid">
+        </div>
+      </div>
+      <div class="clearfix">
+        <img src="liebeskind-frames.jpg" class="img-inline float-sm-right ml-sm-2 mt-3 d-none d-sm-block">
+        <p>
+          When you dance as if no one is watching. When you make up the rules as you go along. When a walk in the park turns into the catwalk.
+          When you have the world in your hands. When it’s out with the old and in with the new. When you make the most beautiful thing just a little bit more beautiful.
+          When you stagger through the night and eventually learn to fly. When you explode into the here and now and the sound rings in your ears for days.
+          That’s Berlin. LIEBESKIND BERLIN. Unique and chic. Sophisticated and elegant.
+        </p>
+        <img src="liebeskind-frames.jpg" class="img-inline mx-auto d-block d-sm-none">
+      </div>
+      <h5 class="mt-3" id="dilliDalli"><strong>Dilli Dalli Collection</strong></h5>
+      <div class="clearfix">
+        <img src="dilliDalli-pink.jpg" class="img-inline float-sm-left mr-sm-2 mx-auto d-block">
+        <p>
+          Development of the Dilli Dalli collection was driven by the needs of pediatric eyewear patients, their parents, and eyecare professionals.
+          The extensive research and collaboration with pediatric optometrists, combined with  years of experience and knowledge in pediatric eyewear design,
+          indicated the importance of safety, durability and comfort to parents when it comes to their child’s eyewear.
+        </p>
+        <p>
+          The commitment to providing a positive experience is what sets Dilli Dalli eyewear apart from other collections.
+        </p>
+        <h6 class="text-center"><strong>DESIGN</strong></h6>
+        <p>
+          Little patients have facial features that aren’t yet fully developed.
+          So they put particular emphasis on proper, precise fit for little faces when designing each Dilli Dalli model.
+        </p>
+        <img src="dilliDalli-gray.jpg" class="img-inline float-sm-right ml-sm-2 mx-auto d-block">
+        <ul>
+          <li>For infants and toddlers newborn to 3 years with most models eye sizes 35 to 44</li>
+          <li>Suitable for multi-focal lenses if needed</li>
+          <li>IntelliFlex™ multidirectional hinges provide unique flexibility and greater durability to Dilli Dalli frames</li>
+          <li>Proprietary Soft Touch material provides flexibility and strength **</li>
+          <li>One piece design with no separate or moving parts **</li>
+          <li>Bridge and nose pads are placed lower so eyes are better centered</li>
+          <li>Unique flexible temple design offers up and down, side to side action to “self” adjust **</li>
+          <li>Deeper groove eliminates lenses from popping out of the frame **</li>
+          <li>European adjustable cable tips are standard with most models</li>
+          <li>Temples are interchangeable between certain models</li>
+          <li>Flattering eye shapes in soft to vibrant colors</li>
+          <li>Whimsical temple motifs on certain models</li>
+          <li>Impact, weather and temperature resistant **</li>
+        </ul>
+        <p>
+          ** Exclusive to Dilli Dalli Soft Touch frames
+        </p>
+      </div>
     </div>
     <div class="mt-4" id="services">
       <h1 class="title-text text-center">Our Services</h1>
@@ -195,17 +253,17 @@
           We are able to provide our clients with contact lens supplies at a competative cost.
           Please ask us regarding direct shipping options.
         </li>
-        <li>We also provide custom products &amp; services such as sun clips, modified lens shapes, and rhinestone setting &amp; replacement.</li>
+        <li>We also provide custom products &amp; services such as sun-clips, modified lens shapes, and rhinestone setting &amp; replacement.</li>
       </ul>
     </div>
     <div class="mt-4" id="faqs">
       <h1 class="title-text text-center">FAQs</h1>
-      <h5 class="mt-3"><strong>EYEGLASS &amp; CONTACT LENS PRESCRIPTION</strong></h5>
+      <h5 class="mt-3" id="prescription"><strong>EYEGLASS &amp; CONTACT LENS PRESCRIPTION</strong></h5>
       <p>
         A valid prescription signed by a licensed eyecare provider and is not expired.
         Depending on local and state laws, your prescription may be considered valid between 1-2 years from the date of examination.
       </p>
-      <h5 class="mt-3"><strong>PAYMENT</strong></h5>
+      <h5 class="mt-3" id="payment"><strong>PAYMENT</strong></h5>
       <dl>
         <dt>
           What forms of payment do you accept?
@@ -234,7 +292,7 @@
           Missouri state residents are subject to local sales tax.
         </dd>
       </dl>
-      <h5 class="mt-3"><strong>PROCESSING/SHIPPING</strong></h5>
+      <h5 class="mt-3" id="processingShipping"><strong>PROCESSING/SHIPPING</strong></h5>
       <dl>
         <dt>
           How long does it take to process my order?
@@ -262,5 +320,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
